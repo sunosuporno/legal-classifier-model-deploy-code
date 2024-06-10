@@ -79,13 +79,15 @@ config.length_penalty = 2.0
 # Instantiate model with updated config
 model = BartForConditionalGeneration(config=config)
 
-url = "https://indiankanoon.org/doc/1386930/"
+url = "https://indiankanoon.org/doc/56699948/"
 
 # Fetch and extract text 
 response = requests.get(url)
 html_content = response.text
 soup = BeautifulSoup(html_content, 'html.parser')
-text = ' '.join([p.get_text() for p in soup.find_all('p')])
+# text = ' '.join([p.get_text() for p in soup.find_all('p')])
+with open('paragraphs.txt', 'r') as file:
+    text = file.read()
 
 # Split text into chunks of at most 1000 tokens (padding room)
 max_len = 1000
@@ -113,7 +115,7 @@ while len(summary) > max_len:
 
 # Final summarization
 final_summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-final_summary = final_summarizer(summary)[0]["summary_text"]
+final_summary = final_summarizer(summary, min_length=150, max_length=250)[0]["summary_text"]
 print('Final Summary:')
 print(final_summary)
 

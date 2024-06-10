@@ -115,61 +115,38 @@ import streamlit as st
 import pickle
 import string
 import nltk
+import pandas as pd
 nltk.download('stopwords')
 from nltk.corpus import stopwords
-
 from nltk.stem.porter import PorterStemmer
 import requests
 from bs4 import BeautifulSoup
 from transformers import pipeline, BartForConditionalGeneration, BartConfig
+import test5
 
 ps = PorterStemmer() 
 
+# Define the transform_text function
 def transform_text(text):
-    # Existing text transformation code 
+    # Example text transformation logic
+    print("Transforming text...")
+    text = text.lower()
+    text = ''.join([char for char in text if char not in string.punctuation])
+    words = text.split()
+    words = [ps.stem(word) for word in words if word not in stopwords.words('english')]
+    return ' '.join(words)
 
-    tfidf = pickle.load(open('vectorizer.pkl', 'rb'))  
-    model = pickle.load(open('model.pkl', 'rb'))
-
-    st.title("Legal Document Classifier")
-
-    input_url = st.text_input("Enter the link")
-
-    if st.button('Classify'):
-        if input_url:
-            # Fetch text 
-            response = requests.get(input_url)
-            html_content = response.text
-            soup = BeautifulSoup(html_content, 'html.parser')
-            text = ' '.join([p.get_text() for p in soup.find_all('p')])
-            
-            # Summarization
-            summarizer = pipeline("summarization", model="facebook/bart-large-cnn") 
-            summary = summarize(text, summarizer)
-            
-            # Existing steps
-            transformed_sms = transform_text(text) 
-            vector_input = tfidf.transform([transformed_sms])
-            result = model.predict(vector_input)[0]
-            st.write(result)
-            st.write(summary)
-
+# Define the summarize function
 def summarize(text, summarizer):
+    print("Summarizing text...")
     max_len = 1000
-    
-    # Split text into chunks
     chunks = [text[i:i+max_len] for i in range(0, len(text), max_len)]
-    
-    # Summarize each chunk
     summaries = []
     for chunk in chunks:
-        summary = summarizer(chunk)[0]["summary_text"] 
+        summary = summarizer(chunk)[0]["summary_text"]
         summaries.append(summary)
-        
-    # Concatenate summary chunks
     summary = " ".join(summaries)
-    
-    # Iterate summarization 
+    print("Chunk Summarizing complete.")
     while len(summary) > max_len:
         new_chunks = [summary[i:i+max_len] for i in range(0, len(summary), max_len)]
         new_summaries = []
@@ -177,9 +154,64 @@ def summarize(text, summarizer):
             new_summary = summarizer(chunk)[0]["summary_text"]
             new_summaries.append(new_summary)
         summary = " ".join(new_summaries)
-        
-    # Final summarization
+        print("Final summarizing text....")
     final_summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
     final_summary = final_summarizer(summary)[0]["summary_text"]
-    
+    print("Summarizing complete.")
     return final_summary
+
+# Streamlit interface
+st.title("Legal Document Classifier")
+
+input_url = st.text_input("Enter the link")
+
+if st.button('Classify'):
+    if input_url:
+        response = requests.get(input_url)
+        html_content = response.text
+        soup = BeautifulSoup(html_content, 'html.parser')
+        title = soup.title.string
+        parts = title.split(' on ')
+        heading = parts[0].strip()
+        date_str = parts[1].strip() if len(parts) > 1 else ''
+        text = ' '.join([p.get_text() for p in soup.find_all(["p", "blockquote", "pre"])])
+        transformed_sms = transform_text(text)
+        tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
+        model = pickle.load(open('model.pkl', 'rb'))
+        vector_input = tfidf.transform([transformed_sms])
+        result = model.predict(vector_input)[0]
+        if result == 1:
+            st.header("Not Cybercrime")         
+            st.markdown(f"<h5>Heading: {heading}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h6>Date: {date_str}</h6>", unsafe_allow_html=True)
+        else:
+            st.header("Cybercrime")
+            st.markdown(f"<h5>Heading: {heading}</h5>", unsafe_allow_html=True)
+            st.markdown(f"<h6>Date: {date_str}</h6>", unsafe_allow_html=True)
+            paragraphs = soup.find_all(["p", "blockquote", "pre"])
+            (sections, summary) = test5.document_filter(paragraphs)
+            df = pd.read_csv('penal_codes.csv')
+            df = df.drop('SL no.', axis=1)
+            penal_code_list = sections
+            penal_code_list = [code.replace("-", "").replace("(", "").replace(")", "").upper() for code in penal_code_list]
+
+# Filter the DataFrame based on the provided list
+            filtered_df = df[df['Penal Code Section'].apply(lambda x: str(x) in penal_code_list)]
+            st.markdown(f"<h6 style='margin-top: 15px;'>Summary: </h6>", unsafe_allow_html=True)
+            st.write(summary)
+            st.markdown(f"<h6 style='margin-top: 15px;'>Sections charged: </h6>", unsafe_allow_html=True)
+            st.write(filtered_df.to_markdown(index=False))
+        # summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+        # summary = summarize(text, summarizer)
+        
+
+
+
+
+
+
+
+# edit the summarize text
+# output the necessary penal codes
+# output the summary
+# only summarize if it's cybercrime

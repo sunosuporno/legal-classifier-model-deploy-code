@@ -1,0 +1,401 @@
+(1) Where, in the course of any inquiry into, or trial of, an offence, it
+appears from the evidence that any person not being the accused has
+committed any offence for which such person could be tried together with
+the accused, the Court may proceed against such person for the offence
+which he appears to have committed. Since these criminal petitions arise out of the same crime,
+
+both the petitions are being disposed of together with a common
+
+order. 16.   An email was sent by Kim Franks to Respondent No.3         on
+
+14.05.2021 as Allscripts Healthcare, LLC did not intend to extend
+
+the SOW, Respondent No.3 has to cease the use of Allscripts
+
+Healthcare, LLC's materials, software and confidential Information.
+
+In view of the pending expiry of SOW, Allscripts Healthcare, LLC
+
+revoked the administrative access that had been provided to
+
+Respondent No.3.    Pursuant to the SOW, several days after the
+
+administrative rights of respondent No.3 were revoked, (after the
+
+expiry of SOW), the Respondent no.3 reached out to Mr.Jeff Franks
+
+on 19-05-2021 and advised him that respondent No.3's ability to
+
+administer its Office 365 account had been impacted by the
+
+change, for which, Mr.Franks responded and agreed to work with
+
+Respondent No.3 for which a reply of Thank You was sent by
+
+Respondent No.3. Thereafter, on 17.05.2021 a complaint was filed
+
+by Allscripts Healthcare LLC against inter alia respondent No.3
+
+before the United States District Court for the District of Delaware
+
+alleging violation of contractual obligations and misappropriation
+
+of the trade secrets of Allsripts Healthcare LLC. The complaint was
+
+later amended on 14.06.2021 and thereafter on 06.08.2021. The
+
+subject matter of the USA court proceedings is with regard to the
+                                   7
+
+
+
+issue of access of Allscripts Healthcare LLC's Mobile Patient
+
+Experience and Microsoft Azure Tenant, wherein the Respondent
+
+No.3 have entered appearance and also filed counter claim in the
+
+USA court proceedings. 19.   It is further contended that the respondent No.3 on
+
+30.07.2021 also sent a legal notice to Allscripts Healthcare LLC,
+                                      8
+
+
+
+Allscripts (India) LLP and Allscripts Healthcare Technologies Pvt.
+
+Ltd., alleging that the recipients had stolen Respondent No.3's data
+
+and demanded the return of respondent No.3's stolen IP. All the
+
+recipients duly responded to the above-mentioned legal notice.
+
+Further they have reiterated that they are separate and distinct
+
+entities from Allscripts Healthcare LLC and that they do not have
+
+any relation with respondent No.3 or the SOW.                   Though the
+
+Allscripts Healthcare LLC sent 3 letters to the respondent No.3
+
+through their USA Counsel requesting them to clarify/detail
+
+information breached, but there has been no reply thereto, that
+
+itself indicates that it is a counter blast case. 20.   The petitioner/accused No.1 apprehending arrest, by virtue
+
+of being the designated partner of Allscripts (India) LLP, filed W.P.
+
+No.14029 of 2021 challenging the issuance of Section 41 A Cr.P.C.
+
+notice before this Hon'ble Court. This court vide its order dated
+
+16.07.2021 had prima facie noted that Allscripts Healthcare LLC,
+
+USA and Allscripts (India) LLP were different entities and that the
+
+petitioner was not concerned with administrative affairs of
+
+Allscripts Healthcare LLC, USA and accordingly directed the
+
+respondent No.2 to not to take any coercive steps against him
+
+including arrest till the next date of hearing and extended from
+
+time to time, and is in operation. 22.   On 20.09.2021 the respondent No.2 filed the charge sheet
+
+against inter alia petitioner (accused NO.1) under Sections 43, 65,
+
+66, 66-B, 66-C, 66-D of the IT Act and Section 204, 120 IPC before
+
+the Chief Metropolitan Magistrate, Vishakhapatnam which is being
+
+challenged in the present petition. 29.       Further the petitioner relied on the judgment of the Hon'ble
+
+Supreme Court in Ravindranatha Bajpe V.Mangalore Special
+
+Economic zone Ltd.,1 it is held that the issuing summons or
+
+process against a person is a very serious matter and therefore,
+
+unless there are specific allegations and the role attributed to each
+
+accused more than the bald statement, the Magistrate ought not to
+
+have issued the process. Therefore, in the instant case, the order
+
+taking cognizance and issuing summons is a non-speaking
+
+mechanical order without any reasons and application of mind,
+
+thus liable to be quashed. 31.    Further it is contended that the 3rd respondent, as per the
+
+agreement made on 18.05.2018, has fulfilled all the terms of the
+
+agreement    under       the    project    scope    and   continued     until
+                                     12
+
+
+
+17.05.2021.   The 3rd respondent received an email from Mr.Kim
+
+Franks, VP, Consumer Engagement of Allscripts group from the
+
+email address [email protected] on 14.05.2021 informing
+
+that they are not renewing the agreement dated 18.05.2018.
+
+Therefore, the agreement was terminated as on 14.05.2021. Since
+
+the   termination   of    the   agreement,   on    numerous occasions
+
+Allscripts group and its officials have breached the privacy of the
+
+3rd   respondent    and     removed/copied        the   3rd   respondent's
+
+confidential data from the 3rd respondent's Azure tenant in India.
+
+That the Allscripts group also disabled administrative access of the
+
+3rd respondent's users to its own Azure tenant from Office in
+
+Vishakhapatnam illegally and without their consent.             Therefore,
+
+the respondent No.3 have engaged support of Microsoft and its
+
+resellers in order to restore access and admin privileges to the
+
+tenant it rightfully has owned for the last 6 years.               The 3rd
+
+respondent has documented evidence of unauthorized and illegal
+
+activities of the Allscripts group on 19.05.2021 and on 21.05.2021
+
+within the 3rd respondent's Azure tenant in India.            These illegal
+
+activities are punishable under Indian Penal Code, 1860 and
+
+Information Technology Act, 2000. Therefore, the 3rd respondent
+
+filed a criminal complaint at Cyber Crime Police Station in
+
+Visakhapatnam city, Andhra Pradesh on 31.05.2021 for the
+
+offences of theft, mischief, forgery, cheating, hacking, cyber crimes,
+
+criminal conspiracy and criminal breach of trust under sections
+
+378, 408, 420, 425, 426, 468 r/w 120 B of Indian penal Code,
+
+1860 and under Sections 43, 65 and 66 of Information Technology
+
+Act, 2000, which is registered as F.I.R.No.91 of 2021 under
+
+sections 65, 66 of Information Technology Act, 2000.
+                                    13 39.   Since the petitioners has deleted/tampered with the evidence
+
+to hide their involvement with the help of A3 and A8, all the
+
+documentary evidence, which is crucial to determine the criminal
+
+conspiracy and their involvement in the crime, to cover the role of
+
+the petitioners in the crime, therefore, the conduct of the
+
+petitioners satisfies the essential ingredients under Section 204 of
+
+IPC and the petitioner conspired to tamper and steal the User
+
+Interface Code, confidential data and intellectual property of the
+
+respondent No.3, which attracts the ingredients under Section 65,
+
+66, 66-B, 66-C, 66-D of Information Technology Act, 200 and
+
+Section 204, 120-B of Indian Penal Code, 1860. 44.      Based on the statement of the complainant, the Investigation
+
+Officer addressed a letter on 26.06.2021, to Microsoft Authorities
+
+to confirm the Azure Tenant Cloud ownership. Then the Microsoft
+
+Authorities replied on 19.07.2021 that, "the customer is solely in
+                                    19
+
+
+
+control of the administrator account, which allows them to retrieve
+
+the required information more quickly             and efficiently than
+
+Microsoft", it is proved that the rightful owner of the Azure tenant
+
+is M/s.MahathiSoftware Pvt. Ltd. Basing on that Inspector of
+
+Police, Cyber Crime Police Station, Visakhapatnam city served a
+
+160 Cr.P.C. notice on 20.07.2021. Thus, the primary evidence of
+
+all the witnesses confirmed the prima facie case against the above
+
+noted accused. 51.     Further averred that            Jaydeep Madhukar Wakankar
+
+Petitioner/A1/deleted/tampered with the evidence to hide his
+
+involvement with the help of A2 and A3 and on the advice of A8,
+                                   23
+
+
+
+during the examination of Mr.NiharSheth, the Inspector of Police,
+
+Cyber Crime Police Station found one email dated 02.09.2021
+
+addressed             from             Ms.Catherine           Spector
+
+([email protected]) to Mr.NiharSheth wherein she
+
+has stated that "not stay at your own residence but rather try to
+
+stay with a friend or relative for the moment to avoid the police
+
+coming to you and please don't disclose your location, they also
+
+suggest you to turn off your primary cell phone and not 'use' it but
+
+rather 'find' an alternative phone to use..." 57.      To support his contentions, he has relied on the judgments
+
+following :- "32. Section 81 of the IT Act also specifically provides that the
+         provisions of the Act shall have effect notwithstanding anything
+         inconsistent therewith contained in any other law for the time being
+         in force. All provisions will have their play and significance, if the
+         alleged offence pertains to offence of electronic record. It has to be
+         borne in mind that IT Act is a special enactment. It has special
+         provisions. Section 292 IPC makes offence sale of obscene books,
+         etc. but once the offence has a nexus or connection with the
+         electronic record the protection and effect of Section 79 cannot be
+         ignored and negated. We are inclined to think so as it is a special
+         provision for a specific purpose and the Act has to be given effect to
+         so as to make the protection effective and true to the legislative
+
+
+3
+    2017 2 SCC 18
+                                             26
+
+
+
+            intent. This is the mandate behind Section 81 of the IT Act. The
+            additional protection granted by the IT Act would apply." (iv) The finding against the person facing prosecution in the
+            adjudication proceedings is not binding on the proceeding for
+            criminal prosecution; (vi) The finding in the adjudication proceedings in favour of the
+            person facing trial for identical violation will depend upon the nature
+            of finding. If the exoneration in adjudication proceedings is on
+            technical ground and not on merit, prosecution may continue; and (vii) In case of exoneration, however, on merits where the allegation
+            is found to be not sustainable at all and the person held innocent,
+            criminal prosecution on the same set of facts and circumstances
+            cannot be allowed to continue, the underlying principle being the
+            higher standard of proof in criminal cases. 58.         As per the above judgments, it clarifies that even when the
+
+adjudication proceedings are pending, criminal prosecution can be
+
+launched simultaneously, as contended by the petitioners that the
+
+litigation is pending before the United States District Court of
+
+Delaware is not a bar to initiate the criminal proceedings for the
+
+
+
+
+4
+    (2011) 3 SCC 581
+                                     27
+
+
+
+offences committed by A1 to A8 and both the proceedings can be
+
+conducted simultaneously. 59.       Further submitted that in view of Section 173 (8) of Cr.P.C.
+
+and Section 319 Cr.P.C., there is no bar for the investigation officer
+
+or for the concerned court, to add accused/ or file any
+
+supplementary charge sheet based on the further investigation.
+
+Therefore, in view of the said provisions and based on the factual
+
+aspects of the present case, there is no ground warranting the
+
+interference of this Court under Section 482 of Cr.P.C., hence
+
+requested for dismissal. 60.       On perusal of the pleadings as well as the submissions of the
+
+learned senior counsel, though there is force in the contentions
+
+made by the learned senior counsel Sri Sidharth Luthra, that in
+
+the present case the respondents, without making the Company as
+
+an accused, they cannot proceed against the petitioners, in view of
+
+the ratio decided by the Hon'ble Apex Court in Aneeta Hada vs.
+
+Godfather Travels & Tours pvt. ltd.5 67.     Considering the observations of the Apex Court in the above
+
+referred judgments and also observations of the court in Sunil
+
+Bharti Mittal vs CBI6 this Court feels that there are no grounds to
+
+interfere under Section 482 of Cr.P.C. to quash the proceedings
+
+only on the ground that the Company is not made a party -
+
+co-accused. 68.     But as contended by the learned senior counsel Sri Sidharth
+
+Luthra that there are no specific overacts allegations made against
+
+the petitioners in the complaint, except stating that the petitioners
+
+are using the same e-mail portal and even the allegations made in
+
+the charge sheet contains no specific overt acts, hence it is vague
+
+in nature, however, the person who has been maliciously charged
+
+can file a discharge petition before the court, if the allegations
+
+which have been made against him are false, the Code of Criminal
+
+Procedure provides the provisions for filing a discharge application,
+
+6
+    2015 SCC 609
+                                      31
+
+
+
+if the evidence given before the Court is not sufficient to satisfy the
+
+offence and in the absence of any prima facie case against him, he
+
+is entitled to be discharged. 69.     Considering    the   above    submissions     as   well   as   the
+
+observations    made    by   the   Hon'ble   Apex Court      in   various
+
+judgements referred above, both the criminal petitions are
+
+dismissed and the petitioners are given liberty to file discharge
+
+application under Section 227 of Cr.P.C., before the trial court. If
+
+such application is filed by the petitioners, the trial court shall
+
+dispose of it as expeditiously as possible within one month, without
+
+influencing the observations made by this court in the present
+
+petitions. There shall be no order as to costs.
+​
+​
+
