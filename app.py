@@ -123,6 +123,18 @@ import requests
 from bs4 import BeautifulSoup
 from transformers import pipeline, BartForConditionalGeneration, BartConfig
 import test5
+import re
+
+keywords = [
+    "cyberbully", "harassment", "porn", "sextort",
+    "stalk", "grooming", "digital abuse", "dox", "doxx", "abus", "identity theft",
+    "phish", "fraud", "catfish",  "radical", "insurrect", "terror", "violent overthrow",
+    "trafficking", "extort", "cyber", "cybercrime", "499", "509", "507", "303"
+    "hate", "speech", "misogyn", "cyber stalk", "troll", "secess", "treason", "sedit"
+    "voyeur", "manipulat", "imperson" ,"Cyberattack","Darkweb","Databreach","Phishing",
+    "Malware", "theft", "DOS", "Ransomware","Internet fraud","theft", "Clickjacking","Spoofing","Deepfakes", 
+    "Hacking", "Carding", "Information security", "67", "66", "botnet", "354", "Anti-national"
+]
 
 ps = PorterStemmer() 
 
@@ -160,6 +172,30 @@ def summarize(text, summarizer):
     print("Summarizing complete.")
     return final_summary
 
+import re
+
+def find_keywords_in_text(text, keywords):
+    # Preprocess the text: lowercasing and replacing non-alphanumeric characters with spaces
+    text = re.sub(r'\W+', ' ', text.lower())
+    
+    # Create a regex pattern to match any form of each keyword (e.g., stalk -> stalking, stalked)
+    keyword_patterns = [r'\b' + re.escape(keyword) + r'\w*\b' for keyword in keywords]
+    
+    # Combine all keyword patterns into a single pattern
+    combined_pattern = re.compile('|'.join(keyword_patterns))
+    
+    # Find all matches in the text
+    all_matches = re.findall(combined_pattern, text)
+
+    # Use a dictionary to preserve the order and ensure uniqueness
+    matches = list(dict.fromkeys(all_matches))
+
+    print("Matches: ", matches)
+    
+    # Return a set of unique matches to avoid duplicates
+    return matches
+
+
 # Streamlit interface
 st.title("Legal Document Classifier")
 
@@ -176,6 +212,7 @@ if st.button('Classify'):
         date_str = parts[1].strip() if len(parts) > 1 else ''
         text = ' '.join([p.get_text() for p in soup.find_all(["p", "blockquote", "pre"])])
         transformed_sms = transform_text(text)
+        find_keywords_in_text(text, keywords)
         tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
         model = pickle.load(open('model.pkl', 'rb'))
         vector_input = tfidf.transform([transformed_sms])
@@ -204,7 +241,7 @@ if st.button('Classify'):
         # summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
         # summary = summarize(text, summarizer)
         
-
+# https://indiankanoon.org/doc/15749014/
 
 
 

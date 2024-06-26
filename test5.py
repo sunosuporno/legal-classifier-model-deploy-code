@@ -36,9 +36,6 @@ def document_filter(paragraphs):
         text = paragraph.get_text()
         match = re.search(pattern, text)
         if match:
-            print(f"Matched text: {match.group()}")
-            print(f"Paragraph text: {text.strip()}")
-            print()
             matched_paragraphs.append(text.strip())
 
     pattern = r"""decide.*|conclude.*|find.*|determine.*|rule.*|hold.*|order.*|grant.*|deny.*|affirm.*|reverse.*|"the court finds that.*|it is hereby ordered that.*|the judgment is entered in favor of.*|the plaintiff's claim is dismissed.*|the defendant is held liable for.*|the appeal is denied/granted.*|based on the evidence presented, we conclude that.*|for the reasons stated above, we rule that.*|this court holds that.*|in our opinion.*|the majority opinion is.*|in accordance with precedent.*|as a result, the defendant is sentenced to.*|the contract is deemed null and void.*|the injunction is granted/preliminarily enjoined.*|the damages awarded to the plaintiff are.*|the motion for summary judgment is granted/denied.*|adjudge.*|resolve.*|pronounce.*|concur.*|dissent.*|dismiss.*|remand.*|sustain.*|overrule.*|revoke.*|invalidate.*|affirm.*|reject.*|modify.*|clarify.*|uphold.*|grant.*|relief.*|in accordance with the law.*|the court is of the opinion that.*|upon consideration of the evidence.*|having reviewed the pleadings.*|for the reasons set forth herein.*|in light of the legal principles.*|it is hereby decreed that.*|the court is persuaded by the argument.*|upon careful review of the facts.*|after due deliberation.*|in conformity with legal precedent.*|upon thorough examination of the issue.*|the court finds no merit in the claim.*|after thorough analysis of the law.*|it is the determination of this court that.*|awarded punitive damages.*|found in contempt.*|placed on probation.*|ordered to comply.*|directed to cease and desist.*|granted injunctive relief.*|dismissed for lack of standing.*|granted a writ of certiorari.*|granted a motion for reconsideration.*|directed to pay restitution.*|directed to perform community service.*|ordered to submit to a mental health evaluation.*|bail.*|laches.*|estoppel.*|res judicata.*|tortfeasor.*|proximate cause.*|contributory negligence.*|joint venture.*|bona fide purchaser.*|prima facie case.*|per curiam opinion.*|dicta.*|inter alia.*|subpoena duces tecum.*|sua sponte.*|ex parte communication.*|in camera review.*|the court is satisfied that.*|upon a thorough review of the record.*|having carefully considered the arguments.*|after weighing the evidence.*|for the reasons articulated herein.*|upon analysis of the relevant legal principles.*|in light of the case law cited.*|it is the finding of this court that.*|after thorough examination and deliberation.*|the court has taken into account the testimony of.*|based on the totality of the circumstances.*|in light of the prevailing legal standards.*|it is the judgment of this court that.*|judgments.*"""
@@ -47,9 +44,6 @@ def document_filter(paragraphs):
         text = paragraph.get_text()
         match = re.search(pattern, text)
         if match:
-            print(f"Matched text: {match.group()}")
-            print(f"Paragraph text: {text.strip()}")
-            print()
             matched_paragraphs.append(text.strip())
 
     # Search for cybercrime sections
@@ -61,9 +55,7 @@ def document_filter(paragraphs):
         for match in matches:
             if match not in matched_sections:
                 matched_sections.append(match)
-    
-    print("Unique matched sections:")
-    print(matched_sections)
+
             
     joined_paragraphs = " ".join(matched_paragraphs)
     summary = summarize_doc(joined_paragraphs)
@@ -98,7 +90,6 @@ def summarize_doc(textString):
 
     # Concatenate summary chunks  
     summary = " ".join(summaries)
-    print(summary)
 
     # Keep summarizing until the length of the summary is less than or equal to 1000 tokens
     while len(summary) > max_len:
